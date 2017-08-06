@@ -451,7 +451,6 @@ System.out.println("\nSum of sample weights = " + sum);
     float sum = 0.0f;
 
     // normal distribution:
-/*
     for (int i=0; i<n; i++) {
       w[i] = (float) Math.random();
       sum += w[i];
@@ -459,9 +458,9 @@ System.out.println("\nSum of sample weights = " + sum);
     for (int i=0; i<n; i++) {
       w[i] /= sum;
     }
-*/
 
     // "realistic" distribution:
+/*
     int m = 0;  // number of weights that have been set
     while ((sum < 1.0) && (m < n)) {
       int i = 0;  // index of weight to be set
@@ -479,6 +478,7 @@ System.out.println("\nSum of sample weights = " + sum);
       sum += w[i];
       m++;
     }
+*/
   }
 
   /**
